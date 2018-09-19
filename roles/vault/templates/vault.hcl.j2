@@ -1,0 +1,11 @@
+storage "s3" {
+  access_key = "ACCESS_KEY_HERE"
+  secret_key = "SECRET_KEY_HERE"
+  bucket     = "vault-secret"
+  region	 = "us-east-2"
+}
+
+listener "tcp" {
+	address     = "0.0.0.0:8200"
+	tls_disable = 1
+}
