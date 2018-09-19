@@ -11,3 +11,7 @@ We need to setup systemd init file to manage the persistent vault daemon. We nee
 ### Setup
 
 Provide server IP address in the inventory file on which we want to run this playbook. As we are using S3 as Vault backend, please provide access_key and secret_key in vault.hcl.j2 file in templates of vault role.
+
+Once done run command:
+
+ansible-playbook playbook.yml
