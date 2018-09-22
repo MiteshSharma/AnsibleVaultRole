@@ -1,0 +1,2 @@
+---
+unseal_keys_dir_output: "{{ playbook_dir }}/unsealKey"

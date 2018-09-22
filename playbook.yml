@@ -5,3 +5,11 @@
   become_method: sudo
   roles:
     - vault
+
+- hosts: all
+  vars:
+    unseal_keys_dir_output: "{{ playbook_dir }}/unsealKey"
+    root_token_dir_output: "{{ playbook_dir }}/rootKey"
+  roles:
+    - vault-init
+    - vault-unseal
